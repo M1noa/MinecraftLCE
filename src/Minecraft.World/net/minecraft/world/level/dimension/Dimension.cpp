@@ -65,6 +65,10 @@ bool Dimension::isHasCeiling() {
     return m_isHasCeiling;
 }
 
+bool Dimension::isHasSkyLight() {
+    return m_isHasSkyLight;
+}
+
 float* Dimension::getBrightnessRamp() {
     return m_brightnessRamp;
 }

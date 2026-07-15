@@ -164,6 +164,22 @@ Biome* Biome::byId(int id) {
     return Biome::BIOMES[id];
 }
 
+float Biome::getTemperature() {
+    return m_temperature;
+}
+
+float Biome::getDownfall() {
+    return m_downfall;
+}
+
+float Biome::getDepth() {
+    return m_depth;
+}
+
+float Biome::getScale() {
+    return m_scale;
+}
+
 bool Biome::hasSnow() {
     return isSnowCovered();
 }
