@@ -68,6 +68,10 @@ void Item::setCraftingRemainingItem(Item* item) {
     m_craftingRemainingItem = item;
 }
 
+void Item::setStackedByData(bool stacked) {
+    m_stackedByData = stacked;
+}
+
 void Item::registerBlock(Block* block) {
     Item::registerBlock(block, new BlockItem(block));
 }
