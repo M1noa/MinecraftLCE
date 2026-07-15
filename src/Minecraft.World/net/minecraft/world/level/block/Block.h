@@ -216,6 +216,8 @@ public:
     virtual bool isLiquidBlock();
 
     Material* getMaterial();
+    int getBaseItemType();
+    bool isMipmapEnabled();
     int getId();
     bool neighbourVisibleThroughShapes(const arrayWithLength<AABB const*>*, LevelSource*, const BlockPos&,
                                        const Direction*);

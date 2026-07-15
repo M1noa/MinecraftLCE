@@ -217,6 +217,24 @@ Block::Block(Material* material, const MaterialColor* color) {
 
 Block::~Block() {}
 
+Material* Block::getMaterial() {
+    return m_material;
+}
+
+int Block::getBaseItemType() {
+    return m_baseItemType;
+}
+
+bool Block::isMipmapEnabled() {
+    return m_mipmapEnabled;
+}
+
+Block* Block::setBaseItemTypeAndMaterial(int baseItemType, int materialType) {
+    m_baseItemType = baseItemType;
+    m_materialType = materialType;
+    return this;
+}
+
 const BlockState* Block::defaultBlockState() {
     return m_blockState;
 }
