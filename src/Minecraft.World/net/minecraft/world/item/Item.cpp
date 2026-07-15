@@ -46,6 +46,14 @@ Item::Item() {
     this->addProperty(ResourceLocation(L"cooldown"), cooldownFunction);
 }
 
+int Item::getMaxDamage() {
+    return m_maxDamage;
+}
+
+bool Item::isStackedByData() {
+    return m_stackedByData;
+}
+
 void Item::registerBlock(Block* block) {
     Item::registerBlock(block, new BlockItem(block));
 }
