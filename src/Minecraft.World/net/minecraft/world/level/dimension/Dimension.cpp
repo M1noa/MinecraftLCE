@@ -37,6 +37,10 @@ int Dimension::getMoonPhase(long long time) const {
     return (int)(time / 24000L % 8L + 8L) % 8;
 }
 
+bool Dimension::isNaturalDimension() {
+    return true;
+}
+
 bool Dimension::mayRespawn() const {
     return true;
 }

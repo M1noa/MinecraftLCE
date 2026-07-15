@@ -274,6 +274,11 @@ bool Biome::isSnowCovered() {
     return m_isSnow;
 }
 
+Biome* Biome::setPreviewColor(eMinecraftColour color) {
+    m_previewColor = color;
+    return this;
+}
+
 Biome* Biome::setNameAndDescription(int name, int desc) {
     this->m_nameId = name;
     this->m_descriptionId = desc;
