@@ -54,6 +54,20 @@ bool Item::isStackedByData() {
     return m_stackedByData;
 }
 
+int Item::getBaseItemType() {
+    return m_baseItemType;
+}
+
+Item* Item::setBaseItemTypeAndMaterial(int baseItemType, int material) {
+    m_baseItemType = baseItemType;
+    m_material = material;
+    return this;
+}
+
+void Item::setCraftingRemainingItem(Item* item) {
+    m_craftingRemainingItem = item;
+}
+
 void Item::registerBlock(Block* block) {
     Item::registerBlock(block, new BlockItem(block));
 }

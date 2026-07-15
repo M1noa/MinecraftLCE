@@ -78,6 +78,9 @@ public:
     int getMaxDamage();
     void setStackedByData(bool);
     bool isStackedByData();
+    int getBaseItemType();
+    Item* setBaseItemTypeAndMaterial(int, int);
+    void setCraftingRemainingItem(Item*);
 
     static int VALIDgetId(Item*);
 
